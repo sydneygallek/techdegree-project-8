@@ -1,5 +1,73 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #fcfcfc;
+}
+
 body {
     position: relative;
+    font-family: 'Lato', sans-serif;
+    font-size: .8rem;
+    
+}
+
+h1 {
+    font-size: .91rem;
+    padding-left: 35px;
+    padding-top: 30px;
+    font-weight: 300px;
+    opacity: 80%;
+    letter-spacing: .01rem;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: .89rem;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    color: #93989c;
+    background-color: white;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.grid-row {
+   display: flex;
+}
+
+.div-wrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+.card {
+    display: flex;
+    width: 300px;
+    height: 130px;
+    margin: 10px;
+    justify-content: space-evenly;
+    border-radius: 2px;
+    border: 1px solid #93989c;
+    align-items: center;
+
+}
+
+img {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
 }
 
 .overlay {
@@ -12,21 +80,46 @@ body {
 }
 
 .modal {
-    width: 375px;
+    width: 325px;
     margin: 15% auto auto;
-  position: relative;
-  text-align: center;
-  background: #fff;
-  border: 1px solid #778;
-  border-radius: 5px;
-  padding: 30px 20px;
+    position: relative;
+    text-align: center;
+    border: 1px solid #c9caca;
+    border-radius: 5px;
+    padding: 20px 20px;
+    line-height: 1.5rem;
+    background-color: white;
+}
+
+div.modal-content div.text-container h2.name
+{
+    padding-bottom: 0;
+    background-color: white;
+
+}
+
+div.modal-content {
+    background-color: white;
+}
+div.text-container{
+    background-color: white;
+}
+
+hr {
+    margin: 20px;
+    border: .5px solid #93989c;
 }
 
 .modal-close {
     position: absolute;
-    right: 15px;
-    top: 5px;
+    right: 25px;
+    top: 2px;
     cursor: pointer;
+    border: none;
+}
+
+.modal-content > div:nth-child(2) > p:nth-child(5) {
+    background-color: white;
 }
 
 .hidden {
